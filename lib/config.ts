@@ -7,8 +7,7 @@
 // 1. Calendly-Account anlegen (kostenloser Tier reicht), Event "Discovery-Call 30 Min".
 // 2. Den Event-Link kopieren (Form: https://calendly.com/DEIN-NAME/discovery).
 // 3. Hier unten ersetzen — fertig. Alle CTAs auf der Seite zeigen automatisch darauf.
-export const CALENDLY_URL =
-  "https://calendly.com/eugenschnellbach/convlab-discovery"; // <-- ERSETZEN
+export const CALENDLY_URL = "https://calendly.com/iwizard107/30min"; // LIVE Calendly Discovery-Call
 
 // --- Stripe Payment-Links (LIVE, acct Id-wizard) ---
 export const STRIPE_AUDIT_URL = "https://buy.stripe.com/7sY6oJfF45xJ4mwbVt77O00"; // ConvLab Audit 1.490 CHF
