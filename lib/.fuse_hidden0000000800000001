@@ -14,7 +14,7 @@ export const STRIPE_AUDIT_URL = "https://buy.stripe.com/7sY6oJfF45xJ4mwbVt77O00"
 export const STRIPE_REANALYSE_URL = "https://buy.stripe.com/6oUaEZdwW1ht1ak1gP77O01"; // 30-Tage-Re-Analyse 290 CHF
 
 // --- Social ---
-export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/eugen-schnellbach/"; // korrekt
+export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/eugenschnellbach"; // <-- PRUEFEN
 export const LINKEDIN_POST_URL =
   "https://www.linkedin.com/feed/update/urn:li:share:7474492261112795136";
 
