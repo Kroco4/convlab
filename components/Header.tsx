@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CALENDLY_URL } from "@/lib/config";
 
@@ -22,12 +23,12 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-content items-center justify-between px-5">
-        <a href="#top" className="flex items-center gap-2 font-bold tracking-tight">
+        <Link href="/#top" className="flex items-center gap-2 font-bold tracking-tight">
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-accent text-sm font-bold text-white">
             CL
           </span>
           <span className="text-lg">ConvLab</span>
-        </a>
+        </Link>
         <a
           href={CALENDLY_URL}
           target="_blank"

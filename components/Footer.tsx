@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LINKEDIN_PROFILE_URL } from "@/lib/config";
 
 export default function Footer() {
@@ -11,12 +12,12 @@ export default function Footer() {
           ConvLab
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-          <a href="/impressum" className="hover:text-foreground">
+          <Link href="/impressum" className="hover:text-foreground">
             Impressum
-          </a>
-          <a href="/datenschutz" className="hover:text-foreground">
+          </Link>
+          <Link href="/datenschutz" className="hover:text-foreground">
             Datenschutz
-          </a>
+          </Link>
           <a
             href={LINKEDIN_PROFILE_URL}
             target="_blank"
