@@ -37,6 +37,11 @@ export default function Hero() {
             Kostenloses Discovery-Call buchen → 30 Min
           </a>
         </div>
+        <p className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-muted">
+          <span><span className="mr-1 text-accent">✓</span>Bug-Findungs-Garantie</span>
+          <span><span className="mr-1 text-accent">✓</span>7-Tage-Turnaround</span>
+          <span><span className="mr-1 text-accent">✓</span>100% Vorkasse via Stripe</span>
+        </p>
         <div className="mt-10 max-w-2xl rounded-xl border border-border bg-surface/60 p-5">
           <p className="text-sm leading-relaxed text-muted">
             <span className="mr-1 text-accent">★</span>
