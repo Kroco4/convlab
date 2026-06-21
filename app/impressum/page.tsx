@@ -68,24 +68,24 @@ export default function ImpressumPage() {
 
       <Section heading="Haftungsausschluss">
         <p>
-          Die Inhalte dieser Website wurden mit groesstmoeglicher Sorgfalt erstellt. Fuer
-          die Richtigkeit, Vollstaendigkeit und Aktualitaet der Inhalte wird jedoch keine
-          Gewaehr uebernommen.
+          Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für
+          die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine
+          Gewähr übernommen.
         </p>
       </Section>
 
       <Section heading="Externe Links">
         <p>
-          Diese Website kann Links zu externen Websites enthalten. Fuer deren Inhalte ist
-          ausschliesslich der jeweilige Betreiber verantwortlich. Der Anbieter uebernimmt
-          keine Haftung fuer verlinkte Inhalte.
+          Diese Website kann Links zu externen Websites enthalten. Für deren Inhalte ist
+          ausschliesslich der jeweilige Betreiber verantwortlich. Der Anbieter übernimmt
+          keine Haftung für verlinkte Inhalte.
         </p>
       </Section>
 
       <Section heading="Urheberrecht">
         <p>
-          Die auf dieser Website veroeffentlichten Inhalte und Werke unterliegen dem
-          Urheberrecht. Eine Vervielfaeltigung oder Verwendung bedarf der vorherigen
+          Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem
+          Urheberrecht. Eine Vervielfältigung oder Verwendung bedarf der vorherigen
           schriftlichen Zustimmung des Anbieters.
         </p>
       </Section>

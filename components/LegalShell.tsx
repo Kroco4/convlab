@@ -18,7 +18,7 @@ export default function LegalShell({
       <main className="px-5 pb-20 pt-32 sm:pt-40">
         <div className="mx-auto w-full max-w-3xl">
           <Link href="/#top" className="text-sm font-semibold text-accent hover:underline">
-            ← Zurueck zur Startseite
+            ← Zurück zur Startseite
           </Link>
           <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
           <p className="mt-2 text-sm text-muted">Stand: {updated}</p>

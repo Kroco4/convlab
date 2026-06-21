@@ -6,13 +6,13 @@ export default function Proof() {
     "3 Bugs identifiziert (HEIC-Upload tot / Stepper-Pills ungeklickbar / GADS-Tracking nie verifiziert)",
     "Alle 3 in Production gefixt (PRs #87, #88, #89, #90)",
     "Conversion-Pixel feuert verifiziert",
-    "Brand-Kampagne von 1,2 % CTR-Ziel auf 10-20 % geoeffnet",
+    "Brand-Kampagne von 1,2 % CTR-Ziel auf 10-20 % geöffnet",
   ];
   return (
     <Section id="proof">
       <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
         Was du buchst, habe ich gerade live an meinem eigenen SaaS durchgezogen —
-        oeffentlich dokumentiert.
+        öffentlich dokumentiert.
       </h2>
 
       <div className="mt-10 rounded-2xl border border-border bg-surface/60 p-6 sm:p-8">
@@ -50,7 +50,7 @@ export default function Proof() {
       </div>
 
       <p className="mt-8 text-lg font-semibold">
-        Das ist exakt der Prozess, den du fuer deinen SaaS bekommst.
+        Das ist exakt der Prozess, den du für deinen SaaS bekommst.
       </p>
     </Section>
   );

@@ -26,7 +26,7 @@ export default function Process() {
   return (
     <Section id="process" className="bg-surface/30">
       <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-        Wie der Audit ablaeuft.
+        Wie der Audit abläuft.
       </h2>
       <ol className="mt-10 space-y-5">
         {steps.map((s, i) => (

@@ -5,7 +5,7 @@ export default function Pricing() {
   const included = [
     "Alles aus dem Process",
     "Bug-Fixes als Code (nicht nur Empfehlungen)",
-    "Tracking-Verifikation fuer Google Ads + Meta Pixel",
+    "Tracking-Verifikation für Google Ads + Meta Pixel",
     "7-Tage-Turnaround",
   ];
   const excluded = [
@@ -30,7 +30,7 @@ export default function Pricing() {
         </p>
         <p className="mt-3 text-muted">
           Launch-Preis. Nur die ersten 3 Slots. Danach steigt der Preis. Wer
-          frueh bucht, sichert sich den Audit zum Einstiegspreis.
+          früh bucht, sichert sich den Audit zum Einstiegspreis.
         </p>
 
         <div className="mt-8 grid gap-8 sm:grid-cols-2">

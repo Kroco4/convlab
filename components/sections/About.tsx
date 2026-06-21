@@ -23,8 +23,8 @@ export default function About() {
             Produkt gebaut, verifiziert und live dokumentiert.
           </p>
           <p className="mt-4 text-muted">
-            Wenn ich es bei mir loesen kann (waehrend ich tagsueber Brillen
-            verkaufe), loese ich es auch bei dir.
+            Wenn ich es bei mir lösen kann (während ich tagsüber Brillen
+            verkaufe), löse ich es auch bei dir.
           </p>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-accent">
             <a href={LINKEDIN_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">

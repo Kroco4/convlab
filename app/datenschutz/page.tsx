@@ -3,7 +3,7 @@ import LegalShell from "@/components/LegalShell";
 import { IMPRESSUM } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklaerung — ConvLab",
+  title: "Datenschutzerklärung — ConvLab",
   description: "Wie ConvLab personenbezogene Daten verarbeitet (DSGVO / revDSG).",
   robots: { index: false, follow: true },
 };
@@ -19,10 +19,10 @@ function Section({ heading, children }: { heading: string; children: React.React
 
 export default function DatenschutzPage() {
   return (
-    <LegalShell title="Datenschutzerklaerung" updated="Juni 2026">
+    <LegalShell title="Datenschutzerklärung" updated="Juni 2026">
       <p>
-        Der Schutz deiner persoenlichen Daten ist mir wichtig. Diese Erklaerung informiert
-        dich darueber, welche Daten beim Besuch dieser Website und bei der Nutzung meiner
+        Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Erklärung informiert
+        dich darüber, welche Daten beim Besuch dieser Website und bei der Nutzung meiner
         Leistungen verarbeitet werden — nach Schweizer Datenschutzgesetz (revDSG) und, wo
         anwendbar, der EU-Datenschutz-Grundverordnung (DSGVO).
       </p>
@@ -43,7 +43,7 @@ export default function DatenschutzPage() {
           Diese Website wird bei Vercel Inc. gehostet. Beim Aufruf werden automatisch
           technische Zugriffsdaten verarbeitet (IP-Adresse, Datum/Uhrzeit, abgerufene
           Seite, Browser-Typ). Diese Daten dienen ausschliesslich dem sicheren und
-          stabilen Betrieb und werden nicht mit anderen Quellen zusammengefuehrt.
+          stabilen Betrieb und werden nicht mit anderen Quellen zusammengeführt.
           Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).
         </p>
       </Section>
@@ -51,17 +51,17 @@ export default function DatenschutzPage() {
       <Section heading="3. Cookies & Tracking">
         <p>
           Diese Website setzt aktuell keine Tracking-Cookies, Analyse- oder Marketing-Pixel
-          ein. Es werden nur technisch notwendige Funktionen genutzt. Sollte zukuenftig
-          Webanalyse (z.B. Microsoft Clarity) eingesetzt werden, wird diese Erklaerung
-          entsprechend ergaenzt und — sofern erforderlich — eine Einwilligung eingeholt.
+          ein. Es werden nur technisch notwendige Funktionen genutzt. Sollte zukünftig
+          Webanalyse (z.B. Microsoft Clarity) eingesetzt werden, wird diese Erklärung
+          entsprechend ergänzt und — sofern erforderlich — eine Einwilligung eingeholt.
         </p>
       </Section>
 
       <Section heading="4. Discovery-Call-Buchung (Calendly)">
         <p>
-          Fuer die Terminbuchung wird Calendly LLC eingesetzt. Wenn du einen Termin buchst,
+          Für die Terminbuchung wird Calendly LLC eingesetzt. Wenn du einen Termin buchst,
           werden die von dir eingegebenen Daten (z.B. Name, E-Mail, Terminwunsch) von
-          Calendly verarbeitet, um den Termin zu organisieren. Es gelten zusaetzlich die
+          Calendly verarbeitet, um den Termin zu organisieren. Es gelten zusätzlich die
           Datenschutzbestimmungen von Calendly. Rechtsgrundlage: Vertragsanbahnung
           (Art. 6 Abs. 1 lit. b DSGVO).
         </p>
@@ -69,36 +69,36 @@ export default function DatenschutzPage() {
 
       <Section heading="5. Zahlungsabwicklung (Stripe)">
         <p>
-          Zahlungen werden ueber Stripe Payments Europe Ltd. abgewickelt. Bei einer Buchung
-          werden die zur Zahlung noetigen Daten direkt an Stripe uebermittelt und dort
-          verarbeitet; ich erhalte keine vollstaendigen Zahlungsmitteldaten. Rechtsgrundlage:
-          Vertragserfuellung (Art. 6 Abs. 1 lit. b DSGVO).
+          Zahlungen werden über Stripe Payments Europe Ltd. abgewickelt. Bei einer Buchung
+          werden die zur Zahlung nötigen Daten direkt an Stripe übermittelt und dort
+          verarbeitet; ich erhalte keine vollständigen Zahlungsmitteldaten. Rechtsgrundlage:
+          Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).
         </p>
       </Section>
 
       <Section heading="6. Auftragsverarbeiter & Drittlandtransfer">
         <p>
           Im Rahmen des Betriebs werden folgende Dienstleister eingesetzt: Vercel (Hosting),
-          Stripe (Zahlung), Calendly (Terminbuchung). Dabei kann es zu einer Uebermittlung
-          in die USA kommen. Die Anbieter verpflichten sich vertraglich (u.a. ueber
+          Stripe (Zahlung), Calendly (Terminbuchung). Dabei kann es zu einer Übermittlung
+          in die USA kommen. Die Anbieter verpflichten sich vertraglich (u.a. über
           EU-Standardvertragsklauseln) zu einem angemessenen Datenschutzniveau.
         </p>
       </Section>
 
       <Section heading="7. Deine Rechte">
         <p>
-          Du hast das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung der
-          Verarbeitung, Datenuebertragbarkeit und Widerspruch. Zudem kannst du dich bei der
-          zustaendigen Aufsichtsbehoerde beschweren (in der Schweiz: EDOEB). Zur Ausuebung
-          deiner Rechte genuegt eine Nachricht an die oben genannte Kontaktadresse.
+          Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+          Verarbeitung, Datenübertragbarkeit und Widerspruch. Zudem kannst du dich bei der
+          zuständigen Aufsichtsbehörde beschweren (in der Schweiz: EDOEB). Zur Ausübung
+          deiner Rechte genügt eine Nachricht an die oben genannte Kontaktadresse.
         </p>
       </Section>
 
-      <Section heading="8. Aenderungen">
+      <Section heading="8. Änderungen">
         <p>
-          Diese Datenschutzerklaerung wird angepasst, sobald sich an der Datenverarbeitung
-          etwas aendert (z.B. neue Tools). Es gilt jeweils die aktuelle, auf dieser Seite
-          veroeffentlichte Fassung.
+          Diese Datenschutzerklärung wird angepasst, sobald sich an der Datenverarbeitung
+          etwas ändert (z.B. neue Tools). Es gilt jeweils die aktuelle, auf dieser Seite
+          veröffentlichte Fassung.
         </p>
       </Section>
     </LegalShell>

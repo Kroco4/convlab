@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
   description:
-    "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie. Microsoft Clarity Setup, Tracking-Verifikation, Code-Fixes inklusive.",
+    "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie. Microsoft Clarity Setup, Tracking-Verifikation, Code-Fixes inklusive.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
     description:
-      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
     url: SITE_URL,
     siteName: "ConvLab",
     locale: "de_CH",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
     description:
-      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
   },
 };
 

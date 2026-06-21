@@ -8,11 +8,11 @@ export default function Solution() {
     },
     {
       title: "Funnel-Tiefendiagnose",
-      desc: "100+ Sessions manuell analysiert. Die 3 groessten Conversion-Killer schwarz auf weiss.",
+      desc: "100+ Sessions manuell analysiert. Die 3 grössten Conversion-Killer schwarz auf weiss.",
     },
     {
       title: "Bug-Fixes im Code implementiert (Next.js/React-Stack)",
-      desc: 'PR-Style Fixes, gemerged in deinen Branch. Kein "Wir empfehlen…" — sondern: laeuft.',
+      desc: 'PR-Style Fixes, gemerged in deinen Branch. Kein "Wir empfehlen…" — sondern: läuft.',
     },
     {
       title: "Tracking-Verifikation",
@@ -42,7 +42,7 @@ export default function Solution() {
         <p className="text-xl font-semibold">Festpreis: 1.490 CHF.</p>
         <p className="mt-2 text-muted">
           Keine versteckten Kosten. Keine Add-Ons. Keine
-          &quot;Strategie-Sessions&quot; ueber die du extra zahlst.
+          &quot;Strategie-Sessions&quot; über die du extra zahlst.
         </p>
       </div>
     </Section>

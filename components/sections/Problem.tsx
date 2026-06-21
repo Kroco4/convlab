@@ -3,9 +3,9 @@ import Section from "@/components/Section";
 export default function Problem() {
   const pains = [
     "Du verstehst nicht warum die Conversion-Rate so niedrig ist.",
-    "Google Ads + Meta Ads fuehlen sich an wie ein Money-Sink.",
-    "Du weisst nicht ob dein Conversion-Pixel ueberhaupt feuert.",
-    "Du hast keine Zeit fuer 2 Wochen Funnel-Detektiv.",
+    "Google Ads + Meta Ads fühlen sich an wie ein Money-Sink.",
+    "Du weisst nicht ob dein Conversion-Pixel überhaupt feuert.",
+    "Du hast keine Zeit für 2 Wochen Funnel-Detektiv.",
   ];
   return (
     <Section id="problem">

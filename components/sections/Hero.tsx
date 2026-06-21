@@ -15,7 +15,7 @@ export default function Hero() {
       />
       <div className="mx-auto w-full max-w-content">
         <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-          Dein Funnel laeuft.
+          Dein Funnel läuft.
           <br />
           <span className="text-muted">Aber konvertiert nicht.</span>
         </h1>
@@ -44,7 +44,7 @@ export default function Hero() {
               Live-verifiziert an meinem eigenen SaaS:
             </span>{" "}
             81 Sessions / 0 Conversions → 3 Bugs gefunden &amp; gefixt → Tracking
-            laeuft
+            läuft
           </p>
         </div>
       </div>

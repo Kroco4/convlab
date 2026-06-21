@@ -16,7 +16,7 @@ export default function FinalCTA() {
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-lg text-muted">
           30 Minuten. Du zeigst mir deinen Funnel. Wir checken ob ConvLab Sinn
-          fuer dich macht. Kostenlos. Keine Verkaufsmasche.
+          für dich macht. Kostenlos. Keine Verkaufsmasche.
         </p>
         <a
           href={CALENDLY_URL}

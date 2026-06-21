@@ -1,5 +1,5 @@
 // ============================================================
-// ZENTRALE KONFIGURATION — hier alle Platzhalter befuellen.
+// ZENTRALE KONFIGURATION — hier alle Platzhalter befüllen.
 // ============================================================
 
 // --- Calendly Discovery-Call ---
@@ -26,13 +26,13 @@ export const SITE_URL = "https://convlab.ch";
 export const IMPRESSUM = {
   betreiber: "Eugen Schnellbach",
   bezeichnung: "handelnd unter der Bezeichnung ConvLab",
-  rechtsform: "Einzelunternehmen in Gruendung",
+  rechtsform: "Einzelunternehmen in Gründung",
   cO: "c/o F2BII E-Commerce #895",
   strasse: "Hintergoldingerstrasse 30",
   plzOrt: "8638 Goldingen",
   region: "St. Gallen, Schweiz",
   land: "Schweiz",
-  email: "hallo@id-wizard.com", // vorlaeufig (id-wizard-Adresse), spaeter ggf. eigene ConvLab-Mail
+  email: "hallo@id-wizard.com", // vorläufig (id-wizard-Adresse), später ggf. eigene ConvLab-Mail
   mwstPflichtig: false,
   gerichtsstand: "Goldingen, Kanton St. Gallen, Schweiz",
   uid: "", // optional: "CHE-123.456.789"

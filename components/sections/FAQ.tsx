@@ -4,7 +4,7 @@ export default function FAQ() {
   const faqs = [
     {
       q: "Wie viele Kunden auf einmal?",
-      a: "Max 2 parallel. So bleibt der Service deep, nicht oberflaechlich. Slots sind knapp.",
+      a: "Max 2 parallel. So bleibt der Service deep, nicht oberflächlich. Slots sind knapp.",
     },
     {
       q: "Was wenn ich keinen Next.js / Modern-Stack habe?",
@@ -19,8 +19,8 @@ export default function FAQ() {
       a: "Nein. Audit ohne Fixes ist halb. Ich nehme nur Voll-Pakete an.",
     },
     {
-      q: "Wieviel Aufwand entsteht fuer mich?",
-      a: "~2-3 Stunden ueber eine Woche: Discovery-Call, Stripe-Read-Access geben, Code-PR mergen, Debrief-Call.",
+      q: "Wieviel Aufwand entsteht für mich?",
+      a: "~2-3 Stunden über eine Woche: Discovery-Call, Stripe-Read-Access geben, Code-PR mergen, Debrief-Call.",
     },
     {
       q: "Wie kontaktiere ich dich?",
@@ -30,7 +30,7 @@ export default function FAQ() {
   return (
     <Section id="faq">
       <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-        Haeufige Fragen.
+        Häufige Fragen.
       </h2>
       <div className="mt-10 space-y-3">
         {faqs.map((f) => (
