@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileCTA from "@/components/MobileCTA";
+import JsonLd from "@/components/JsonLd";
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
@@ -13,6 +15,7 @@ import FinalCTA from "@/components/sections/FinalCTA";
 export default function Home() {
   return (
     <>
+      <JsonLd />
       <Header />
       <main>
         <Hero />
@@ -26,6 +29,7 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
+      <MobileCTA />
     </>
   );
 }

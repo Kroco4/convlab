@@ -50,10 +50,13 @@ export default function DatenschutzPage() {
 
       <Section heading="3. Cookies & Tracking">
         <p>
-          Diese Website setzt aktuell keine Tracking-Cookies, Analyse- oder Marketing-Pixel
-          ein. Es werden nur technisch notwendige Funktionen genutzt. Sollte zukünftig
-          Webanalyse (z.B. Microsoft Clarity) eingesetzt werden, wird diese Erklärung
-          entsprechend ergänzt und — sofern erforderlich — eine Einwilligung eingeholt.
+          Diese Website setzt keine Marketing- oder Tracking-Cookies ein. Zur
+          Reichweiten- und Performance-Messung nutze ich Vercel Web Analytics und Vercel
+          Speed Insights. Beide arbeiten cookielos und anonymisiert, speichern keine
+          personenbezogenen Daten und erstellen keine geraeteuebergreifenden Profile –
+          deshalb ist hierfuer kein Cookie-Banner erforderlich. Rechtsgrundlage:
+          berechtigtes Interesse an einem fehlerfreien, performanten Angebot
+          (Art. 6 Abs. 1 lit. f DSGVO).
         </p>
       </Section>
 

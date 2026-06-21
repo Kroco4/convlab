@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SITE_URL } from "@/lib/config";
 
@@ -15,12 +17,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
   description:
-    "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie. Microsoft Clarity Setup, Tracking-Verifikation, Code-Fixes inklusive.",
+    "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie. Microsoft Clarity Setup, Tracking-Verifikation, Code-Fixes inklusive.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
     description:
-      "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
     url: SITE_URL,
     siteName: "ConvLab",
     locale: "de_CH",
@@ -30,8 +32,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
     description:
-      "Productized Audit-Service für DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0D1117",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -39,7 +47,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de" className={dmSans.variable}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
