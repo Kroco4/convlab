@@ -1,5 +1,10 @@
 import Section from "@/components/Section";
-import { CALENDLY_URL, LINKEDIN_PROFILE_URL } from "@/lib/config";
+import {
+  CALENDLY_URL,
+  LINKEDIN_PROFILE_URL,
+  SUPPORT_EMAIL,
+  SUPPORT_MAILTO,
+} from "@/lib/config";
 
 export default function FinalCTA() {
   return (
@@ -26,16 +31,26 @@ export default function FinalCTA() {
         >
           Discovery-Call buchen →
         </a>
-        <p className="mt-4 text-sm text-muted">
-          oder DM auf LinkedIn:{" "}
+        <p className="mt-6 text-sm text-muted">
+          Lieber per Mail oder DM?{" "}
+          <a
+            href={SUPPORT_MAILTO}
+            className="font-semibold text-accent hover:underline"
+          >
+            {SUPPORT_EMAIL}
+          </a>
+          {" · "}
           <a
             href={LINKEDIN_PROFILE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-accent hover:underline"
           >
-            Eugen Schnellbach
+            LinkedIn-DM
           </a>
+        </p>
+        <p className="mt-3 text-xs text-muted/80">
+          Antwort innerhalb von 24h, an Wochentagen meist innerhalb von 2h.
         </p>
       </div>
     </Section>

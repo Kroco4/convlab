@@ -1,5 +1,10 @@
 import Section from "@/components/Section";
-import { LINKEDIN_PROFILE_URL, LINKEDIN_POST_URL } from "@/lib/config";
+import {
+  LINKEDIN_PROFILE_URL,
+  LINKEDIN_POST_URL,
+  SUPPORT_EMAIL,
+  SUPPORT_MAILTO,
+} from "@/lib/config";
 
 export default function About() {
   return (
@@ -26,12 +31,19 @@ export default function About() {
             Wenn ich es bei mir lösen kann (während ich tagsüber Brillen
             verkaufe), löse ich es auch bei dir.
           </p>
+          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs font-semibold text-muted">
+            <span className="text-accent">●</span>
+            Made in Switzerland · Solo-betrieben · DSGVO-konform
+          </div>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-accent">
             <a href={LINKEDIN_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">
               LinkedIn-Profil
             </a>
             <a href={LINKEDIN_POST_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">
               Building-in-Public-Story
+            </a>
+            <a href={SUPPORT_MAILTO} className="hover:underline">
+              {SUPPORT_EMAIL}
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LINKEDIN_PROFILE_URL } from "@/lib/config";
+import { LINKEDIN_PROFILE_URL, SUPPORT_EMAIL, SUPPORT_MAILTO } from "@/lib/config";
 
 export default function Footer() {
   return (
@@ -12,6 +12,13 @@ export default function Footer() {
           ConvLab
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+          <a
+            href={SUPPORT_MAILTO}
+            className="hover:text-foreground"
+            aria-label={`E-Mail an ${SUPPORT_EMAIL}`}
+          >
+            {SUPPORT_EMAIL}
+          </a>
           <Link href="/impressum" className="hover:text-foreground">
             Impressum
           </Link>
@@ -27,7 +34,7 @@ export default function Footer() {
             LinkedIn
           </a>
         </nav>
-        <p>© {new Date().getFullYear()} ConvLab · Eugen Schnellbach</p>
+        <p>© {new Date().getFullYear()} ConvLab · Made in Switzerland</p>
       </div>
     </footer>
   );
