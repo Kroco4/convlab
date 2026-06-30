@@ -1,85 +1,170 @@
 import Section from "@/components/Section";
-import { STRIPE_AUDIT_URL } from "@/lib/config";
+import { CALENDLY_URL, STRIPE_AUDIT_URL } from "@/lib/config";
+
+type Cta = {
+  label: string;
+  href: string;
+  external: boolean;
+};
+
+type Tier = {
+  name: string;
+  price: string;
+  cadence: string;
+  tagline: string;
+  bullets: string[];
+  cta: Cta;
+  featured?: boolean;
+};
+
+const TIERS: Tier[] = [
+  {
+    name: "Spot-Fix",
+    price: "CHF 490",
+    cadence: "einmalig",
+    tagline: "1 Bug, 1 PR, 3 Tage.",
+    bullets: [
+      "Ein dokumentierter Conversion-Bug",
+      "Pull Request in deinen Branch",
+      "Discovery-Call inkludiert",
+      "Tracking-Verifikation des Fix",
+    ],
+    cta: {
+      label: "Spot-Fix anfragen",
+      href: CALENDLY_URL,
+      external: true,
+    },
+  },
+  {
+    name: "Full Audit",
+    price: "CHF 1'490",
+    cadence: "einmalig · 7 Tage",
+    tagline: "3 Bugs, 3 PRs, Bug-Findungs-Garantie.",
+    bullets: [
+      "Drei Conversion-Bugs identifiziert + gefixt",
+      "Google Ads + Meta Pixel + Clarity-Tracking verifiziert",
+      "Stripe-Funnel End-to-End getestet",
+      "30-Min-Debrief mit Live-Verifikation",
+      "Bug-Findungs-Garantie: keine 3 Bugs → Rueckerstattung",
+    ],
+    cta: {
+      label: "Full Audit buchen",
+      href: STRIPE_AUDIT_URL,
+      external: true,
+    },
+    featured: true,
+  },
+  {
+    name: "Retainer",
+    price: "ab CHF 990",
+    cadence: "pro Monat",
+    tagline: "Kontinuierliche Conversion-Pflege.",
+    bullets: [
+      "1–2 Bugs pro Monat gefixt",
+      "Monatlicher Conversion-Snapshot",
+      "Tracking-Health-Check",
+      "Slack/Mail-Channel fuer Hot-Fixes",
+      "Mindestlaufzeit 3 Monate",
+    ],
+    cta: {
+      label: "Retainer besprechen",
+      href: CALENDLY_URL,
+      external: true,
+    },
+  },
+];
+
+function TierCard({ tier }: { tier: Tier }) {
+  return (
+    <div
+      className={
+        tier.featured
+          ? "relative flex flex-col rounded-2xl border border-accent/50 bg-surface-elevated p-7 shadow-accent-glow"
+          : "relative flex flex-col rounded-2xl border border-border bg-surface/60 p-7"
+      }
+    >
+      {tier.featured && (
+        <div className="absolute -top-3 left-7 right-7 flex flex-wrap items-center justify-between gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 font-mono text-[10px] uppercase tracking-[0.16em] text-background">
+            Empfohlen
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-background px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
+            <span
+              className="relative flex h-1.5 w-1.5 items-center justify-center"
+              aria-hidden
+            >
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+            </span>
+            2 von 3 Slots frei · Juli
+          </span>
+        </div>
+      )}
+
+      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+        {`// ${tier.name.toLowerCase()}`}
+      </p>
+      <h3 className="mt-3 font-grotesk text-2xl font-bold tracking-tight">
+        {tier.name}
+      </h3>
+      <p className="mt-1 text-sm text-muted">{tier.tagline}</p>
+
+      <div className="mt-6 flex items-baseline gap-2">
+        <span className="font-grotesk text-4xl font-bold tracking-tight">
+          {tier.price}
+        </span>
+        <span className="text-sm text-muted">{tier.cadence}</span>
+      </div>
+
+      <ul className="mt-6 flex flex-1 flex-col gap-2.5 text-sm leading-relaxed">
+        {tier.bullets.map((b) => (
+          <li key={b} className="flex gap-2 text-foreground/90">
+            <span className="mt-0.5 text-accent" aria-hidden>✓</span>
+            {b}
+          </li>
+        ))}
+      </ul>
+
+      <a
+        href={tier.cta.href}
+        target={tier.cta.external ? "_blank" : undefined}
+        rel={tier.cta.external ? "noopener noreferrer" : undefined}
+        className={
+          tier.featured
+            ? "mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-background shadow-accent-glow transition-transform hover:-translate-y-0.5"
+            : "mt-8 inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-surface px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:border-accent/40 hover:text-accent"
+        }
+      >
+        {tier.cta.label}
+        <span aria-hidden>→</span>
+      </a>
+    </div>
+  );
+}
 
 export default function Pricing() {
-  const included = [
-    "Alles aus dem Process",
-    "Bug-Fixes als Code (nicht nur Empfehlungen)",
-    "Tracking-Verifikation für Google Ads + Meta Pixel",
-    "7-Tage-Turnaround",
-  ];
-  const excluded = [
-    "Strategie-Calls (du hast Strategie, du brauchst Fixes)",
-    "Newsletter / Email-Marketing-Setup",
-    "Paid-Ads-Management",
-    "Redesign deiner Website",
-  ];
   return (
     <Section id="pricing">
-      <div className="mx-auto max-w-3xl rounded-2xl border border-accent/40 bg-surface/60 p-6 sm:p-10">
-        <div className="flex flex-wrap items-center gap-3">
-          <span className="inline-flex items-center gap-2 rounded-full border border-accent/50 bg-accent/10 px-3 py-1 text-sm font-semibold text-accent">
-            <span className="h-2 w-2 rounded-full bg-accent" />
-            Slot 1 von 3 frei
-          </span>
-          <span className="text-sm text-muted">Launch-Preis</span>
-        </div>
-
-        <p className="mt-6 text-4xl font-bold sm:text-5xl">
-          1.490 CHF
+      <div className="mx-auto max-w-content">
+        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+          {"// pricing · transparent"}
         </p>
-        <p className="mt-3 text-muted">
-          Launch-Preis. Nur die ersten 3 Slots. Danach steigt der Preis. Wer
-          früh bucht, sichert sich den Audit zum Einstiegspreis.
+        <h2 className="mt-3 font-grotesk text-3xl font-bold tracking-tight sm:text-4xl">
+          Drei Pakete. Festpreise. Keine Stundenrechnung.
+        </h2>
+        <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
+          Du weisst vorab was du kriegst und was es kostet. Wenn wir die
+          Bug-Findungs-Garantie nicht halten, bekommst du dein Geld zurueck.
         </p>
 
-        <div className="mt-8 grid gap-8 sm:grid-cols-2">
-          <div>
-            <p className="font-semibold">Was drin ist:</p>
-            <ul className="mt-3 space-y-2 text-sm">
-              {included.map((i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="text-accent">✓</span>
-                  <span>{i}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-semibold">Was NICHT drin ist:</p>
-            <ul className="mt-3 space-y-2 text-sm text-muted">
-              {excluded.map((i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="text-muted">✕</span>
-                  <span>{i}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          {TIERS.map((t) => (
+            <TierCard key={t.name} tier={t} />
+          ))}
         </div>
 
-        <div className="mt-8 rounded-xl border border-accent/30 bg-accent/5 p-5">
-          <p className="font-semibold">
-            <span className="mr-2 text-accent">✓ Garantie:</span>
-            Ich finde mind. 3 verifizierte Conversion-Bugs in deinem Funnel —
-            oder du zahlst nichts.
-          </p>
-        </div>
-
-        <div className="mt-6 rounded-xl border border-border p-5 text-sm text-muted">
-          <span className="font-semibold text-foreground">Optional dazu:</span>{" "}
-          30-Tage-Re-Analyse (Vorher/Nachher-Lift gemessen):{" "}
-          <span className="font-semibold text-foreground">+290 CHF</span>
-        </div>
-
-        <a
-          href={STRIPE_AUDIT_URL}
-          className="mt-8 flex w-full items-center justify-center rounded-xl bg-accent px-7 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90"
-        >
-          1.490 CHF — Audit jetzt buchen →
-        </a>
-        <p className="mt-3 text-center text-sm text-muted">
-          Zahlung: 100% bei Buchung. Stripe Checkout.
+        <p className="mt-8 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+          {"// alle preise zzgl. MwSt · Schweizer Franken · 100% Vorkasse"}
         </p>
       </div>
     </Section>

@@ -3,13 +3,10 @@ import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
 import JsonLd from "@/components/JsonLd";
 import Hero from "@/components/sections/Hero";
-import Problem from "@/components/sections/Problem";
-import Solution from "@/components/sections/Solution";
-import Proof from "@/components/sections/Proof";
+import TrustStrip from "@/components/sections/TrustStrip";
 import Process from "@/components/sections/Process";
+import Results from "@/components/sections/Results";
 import Pricing from "@/components/sections/Pricing";
-import About from "@/components/sections/About";
-import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -19,13 +16,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Problem />
-        <Solution />
-        <Proof />
+        <TrustStrip />
         <Process />
+        <Results />
         <Pricing />
-        <About />
-        <FAQ />
         <FinalCTA />
       </main>
       <Footer />

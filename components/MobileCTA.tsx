@@ -23,10 +23,11 @@ export default function MobileCTA() {
         href={CALENDLY_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Kostenloses Discovery-Call buchen"
-        className="flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-base font-semibold text-white"
+        aria-label="Discovery-Call buchen"
+        className="flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-base font-semibold text-background shadow-accent-glow"
       >
-        Discovery-Call buchen → 30 Min
+        Discovery-Call buchen
+        <span aria-hidden>→</span>
       </a>
     </div>
   );

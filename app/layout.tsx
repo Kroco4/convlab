@@ -1,28 +1,40 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
+import { Inter, Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SITE_URL } from "@/lib/config";
 
-// Self-hosted DM Sans (variable). Keine externe Google-Fonts-Request → schneller + besserer Lighthouse-Score.
-const dmSans = localFont({
-  src: "./fonts/DMSans-Variable.woff2",
-  variable: "--font-dm-sans",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
-  weight: "100 1000",
+});
+
+const grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-grotesk",
+  display: "swap",
+  weight: ["500", "600", "700"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
+  title: "ConvLab — Wir schicken den Fix, nicht den Report.",
   description:
-    "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie. Microsoft Clarity Setup, Tracking-Verifikation, Code-Fixes inklusive.",
+    "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
+    title: "ConvLab — Wir schicken den Fix, nicht den Report.",
     description:
-      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
     url: SITE_URL,
     siteName: "ConvLab",
     locale: "de_CH",
@@ -30,14 +42,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ConvLab — 3 Conversion-Bugs in 7 Tagen, gefixt im Code",
+    title: "ConvLab — Wir schicken den Fix, nicht den Report.",
     description:
-      "Productized Audit-Service fuer DACH SaaS-Solo-Founder. 1.490 CHF Festpreis. Bug-Findungs-Garantie.",
+      "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D1117",
+  themeColor: "#0a0a0b",
   width: "device-width",
   initialScale: 1,
 };
@@ -46,7 +58,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={dmSans.variable}>
+    <html
+      lang="de"
+      className={`${inter.variable} ${grotesk.variable} ${plexMono.variable}`}
+    >
       <body className="font-sans antialiased">
         {children}
         <Analytics />
