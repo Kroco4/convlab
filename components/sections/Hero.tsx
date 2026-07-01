@@ -34,17 +34,18 @@ export default function Hero() {
             live verifiziert — als Pull Request in deinen Branch.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          {/* CTA-Block — stackt auf Mobile fuer besseren Touch-Target, wird auf sm+ inline. */}
+          <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-4 text-[15px] font-semibold text-background shadow-accent-glow transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-7 py-4 text-[15px] font-semibold text-background shadow-accent-glow transition-transform hover:-translate-y-0.5 sm:justify-start"
             >
               Discovery-Call buchen
               <span aria-hidden>→</span>
             </a>
-            <span className="text-sm text-muted">
+            <span className="text-center text-sm text-muted sm:text-left">
               30 Min · kostenlos · kein Verkauf
             </span>
           </div>

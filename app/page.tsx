@@ -9,6 +9,7 @@ import Results from "@/components/sections/Results";
 import Disqualify from "@/components/sections/Disqualify";
 import About from "@/components/sections/About";
 import Pricing from "@/components/sections/Pricing";
+import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Disqualify />
         <About />
         <Pricing />
+        <FAQ />
         <FinalCTA />
       </main>
       <Footer />
