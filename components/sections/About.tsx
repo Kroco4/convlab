@@ -34,7 +34,7 @@ export default function About() {
 
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
               Eugen Schnellbach. ConvLab ist kein Side-Hustle einer Agentur —
-              ich baue selbst SaaS. Tagsueber Augenoptiker in der Schweiz, abends
+              ich baue selbst SaaS. Tagsüber Augenoptiker in der Schweiz, abends
               Founder von{" "}
               <a
                 href="https://id-wizard.com"

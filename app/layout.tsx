@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "ConvLab — Wir schicken den Fix, nicht den Report.",
   description:
-    "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
+    "Productized Conversion-Audit für DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "ConvLab — Wir schicken den Fix, nicht den Report.",
     description:
-      "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
+      "Productized Conversion-Audit für DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
     url: SITE_URL,
     siteName: "ConvLab",
     locale: "de_CH",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ConvLab — Wir schicken den Fix, nicht den Report.",
     description:
-      "Productized Conversion-Audit fuer DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
+      "Productized Conversion-Audit für DACH SaaS-Solo-Founder. 3 Bugs in 7 Tagen, gefixt im Code. Ab CHF 490.",
   },
 };
 

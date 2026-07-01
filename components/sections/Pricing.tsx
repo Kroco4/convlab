@@ -45,7 +45,7 @@ const TIERS: Tier[] = [
       "Google Ads + Meta Pixel + Clarity-Tracking verifiziert",
       "Stripe-Funnel End-to-End getestet",
       "30-Min-Debrief mit Live-Verifikation",
-      "Bug-Findungs-Garantie: keine 3 Bugs → Rueckerstattung",
+      "Bug-Findungs-Garantie: keine 3 Bugs → Rückerstattung",
     ],
     cta: {
       label: "Full Audit buchen",
@@ -63,7 +63,7 @@ const TIERS: Tier[] = [
       "1–2 Bugs pro Monat gefixt",
       "Monatlicher Conversion-Snapshot",
       "Tracking-Health-Check",
-      "Slack/Mail-Channel fuer Hot-Fixes",
+      "Slack/Mail-Channel für Hot-Fixes",
       "Mindestlaufzeit 3 Monate",
     ],
     cta: {
@@ -154,7 +154,7 @@ export default function Pricing() {
         </h2>
         <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
           Du weisst vorab was du kriegst und was es kostet. Wenn wir die
-          Bug-Findungs-Garantie nicht halten, bekommst du dein Geld zurueck.
+          Bug-Findungs-Garantie nicht halten, bekommst du dein Geld zurück.
         </p>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">

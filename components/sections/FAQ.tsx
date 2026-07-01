@@ -8,11 +8,11 @@ const FAQS = [
   },
   {
     q: "Wie viele Kunden auf einmal?",
-    a: "Max 2 parallel. So bleibt der Service deep, nicht oberflaechlich. Slots sind knapp — wenn Slot 1–3 weg sind, steigt der Preis.",
+    a: "Max 2 parallel. So bleibt der Service deep, nicht oberflächlich. Slots sind knapp — wenn Slot 1–3 weg sind, steigt der Preis.",
   },
   {
     q: "Was wenn ich keinen Next.js / Modern-Stack habe?",
-    a: "Schreib mir vor dem Buchen. Aktiv unterstuetzte Stacks: Next.js, Nuxt, Remix, SvelteKit, Astro, Vite + React. Legacy-Stacks (Wordpress, Webflow, Shopify-Theme-only) lehne ich ab — da ist die Audit-Methode nicht direkt anwendbar.",
+    a: "Schreib mir vor dem Buchen. Aktiv unterstützte Stacks: Next.js, Nuxt, Remix, SvelteKit, Astro, Vite + React. Legacy-Stacks (Wordpress, Webflow, Shopify-Theme-only) lehne ich ab — da ist die Audit-Methode nicht direkt anwendbar.",
   },
   {
     q: "Was wenn du keine 3 Bugs findest?",
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Was passiert mit meinem Code und meinen Daten?",
-    a: "Alles read-only wo moeglich: eigener Branch in deinem Repo, eingeschraenkter Stripe-Read-Key (nicht Live-Secret), keine Passwoerter. Nach Audit-Abschluss loesche ich alle lokalen Kopien. NDA gerne, schreib mir vor Buchung.",
+    a: "Alles read-only wo möglich: eigener Branch in deinem Repo, eingeschränkter Stripe-Read-Key (nicht Live-Secret), keine Passwörter. Nach Audit-Abschluss lösche ich alle lokalen Kopien. NDA gerne, schreib mir vor Buchung.",
   },
   {
     q: "Wie viel Tech-Know-how brauche ich?",
@@ -31,8 +31,8 @@ const FAQS = [
     a: "Nein. Audit ohne Fixes ist halb. Ich nehme nur Voll-Pakete an — Diagnose + Fixes als Code + Tracking-Verifikation. So gibt es am Ende echte Resultate, nicht nur PowerPoint-Empfehlungen.",
   },
   {
-    q: "Wieviel Aufwand entsteht fuer mich?",
-    a: "~2–3 Stunden ueber eine Woche: 30-Min-Discovery-Call, 30-Min-Kickoff, Zugaenge geben (15 Min mit Onboarding-PDF), Code-PR reviewen + mergen, 30-Min-Debrief. Den Rest mache ich.",
+    q: "Wieviel Aufwand entsteht für mich?",
+    a: "~2–3 Stunden ueber eine Woche: 30-Min-Discovery-Call, 30-Min-Kickoff, Zugänge geben (15 Min mit Onboarding-PDF), Code-PR reviewen + mergen, 30-Min-Debrief. Den Rest mache ich.",
   },
   {
     q: "Was wenn ich mit dem Ergebnis nicht zufrieden bin?",
@@ -51,7 +51,7 @@ export default function FAQ() {
           Was Founder vor dem Buchen wissen wollen.
         </h2>
         <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
-          Alle Fragen die in Discovery-Calls am haeufigsten aufkommen — vorab ehrlich beantwortet, damit der Call auf den Funnel selbst fokussiert bleibt.
+          Alle Fragen die in Discovery-Calls am häufigsten aufkommen — vorab ehrlich beantwortet, damit der Call auf den Funnel selbst fokussiert bleibt.
         </p>
 
         <div className="mt-10 space-y-3">

@@ -4,7 +4,7 @@ const SIGNALS = [
   {
     tag: "STACK",
     head: "Du fährst Wordpress, Webflow oder Shopify.",
-    sub: "ConvLab fixt im Code. Bei No-Code-Buildern lohnt sich der Audit-Aufwand nicht. Schreib mir trotzdem — ich kenne gute Spezialisten fuer diese Plattformen.",
+    sub: "ConvLab fixt im Code. Bei No-Code-Buildern lohnt sich der Audit-Aufwand nicht. Schreib mir trotzdem — ich kenne gute Spezialisten für diese Plattformen.",
   },
   {
     tag: "TRAFFIC",
@@ -14,7 +14,7 @@ const SIGNALS = [
   {
     tag: "BUSINESS",
     head: "Du verkaufst eine 9-CHF-Sache.",
-    sub: "Bei einem AOV von 9 CHF braucht es 165 Sales nur fuer den Audit-Preis. Das macht wirtschaftlich erst Sinn ab 49+ CHF Produktwert oder Recurring-Revenue.",
+    sub: "Bei einem AOV von 9 CHF braucht es 165 Sales nur für den Audit-Preis. Das macht wirtschaftlich erst Sinn ab 49+ CHF Produktwert oder Recurring-Revenue.",
   },
   {
     tag: "MINDSET",
@@ -31,11 +31,11 @@ export default function Disqualify() {
           {"// ehrlichkeit · fit-check"}
         </p>
         <h2 className="mt-3 font-grotesk text-3xl font-bold tracking-tight sm:text-4xl">
-          Wann ConvLab <span className="text-accent">nicht</span> fuer dich ist.
+          Wann ConvLab <span className="text-accent">nicht</span> für dich ist.
         </h2>
         <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
           Productized-Services funktionieren nur, wenn der Fit stimmt. Lieber jetzt klar
-          sagen wo der Service nicht passt — als spaeter beide Seiten enttaeuschen.
+          sagen wo der Service nicht passt — als später beide Seiten enttäuschen.
         </p>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">

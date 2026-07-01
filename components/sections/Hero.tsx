@@ -34,7 +34,7 @@ export default function Hero() {
             live verifiziert — als Pull Request in deinen Branch.
           </p>
 
-          {/* CTA-Block — stackt auf Mobile fuer besseren Touch-Target, wird auf sm+ inline. */}
+          {/* CTA-Block — stackt auf Mobile für besseren Touch-Target, wird auf sm+ inline. */}
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href={CALENDLY_URL}
