@@ -35,6 +35,12 @@ export default function Footer() {
           >
             Datenschutz
           </Link>
+          <Link
+            href="/agb"
+            className="transition-colors hover:text-foreground"
+          >
+            AGB
+          </Link>
           <a
             href={LINKEDIN_PROFILE_URL}
             target="_blank"

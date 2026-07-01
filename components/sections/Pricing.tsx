@@ -164,7 +164,7 @@ export default function Pricing() {
         </div>
 
         <p className="mt-8 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-          {"// alle preise zzgl. MwSt · Schweizer Franken · 100% Vorkasse"}
+          {"// Festpreise · Schweizer Franken · MwSt-befreit · 100% Vorkasse"}
         </p>
       </div>
     </Section>

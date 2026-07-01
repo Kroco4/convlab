@@ -31,7 +31,7 @@ export const SITE_URL = "https://convlab.ch";
 export const IMPRESSUM = {
   betreiber: "Eugen Schnellbach",
   bezeichnung: "handelnd unter der Bezeichnung ConvLab",
-  rechtsform: "Einzelunternehmen in Gründung",
+  rechtsform: "Einzelunternehmen",
   cO: "c/o F2BII E-Commerce #895",
   strasse: "Hintergoldingerstrasse 30",
   plzOrt: "8638 Goldingen",
